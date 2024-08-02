@@ -1,0 +1,34 @@
+/* Стили для экранов шириной меньше 480px (смартфоны) */
+@media (max-width: 480px) {
+    body {
+        font-size: 4.5vw;
+    }
+}
+
+/* Стили для экранов шириной 481px - 767px (небольшие планшеты) */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 3.5vw;
+    }
+}
+
+/* Стили для экранов шириной 768px - 1023px (большие планшеты) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        font-size: 2.5vw;
+    }
+}
+
+/* Стили для экранов шириной 1024px - 1199px (ноутбуки) */
+@media (min-width: 1024px) and (max-width: 1199px) {
+    body {
+        font-size: 2vw;
+    }
+}
+
+/* Стили для экранов шириной 1200px и больше (настольные компьютеры) */
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.8vw;
+    }
+}
