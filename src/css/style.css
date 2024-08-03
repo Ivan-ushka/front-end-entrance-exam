@@ -365,7 +365,6 @@ select {
 }
 
 .education-description {
-    font-size: 0.8em;
     color: var(--success-color);
 }
 
@@ -395,16 +394,16 @@ select {
     margin: 12px 12px 6px 12px;
 }
 
-.interests-items-wrap{
+.interests-tags-wrap{
     padding: 0 6px;
 }
 
-.interests-item {
+.interests-tag {
     display: inline-block;
     margin: 6px;
     padding: 4px 10px;
     border-radius: 10px;
-    background: #FFFFFF;
+    background-color: var(--white-color);
 }
 
 /*   Email section  */
@@ -424,5 +423,29 @@ select {
     margin-top: 10px;
 }
 
+/*    Download pdf button   */
 
+.downloadBtn-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin: 10px
+}
 
+.downloadBtn:hover{
+    padding: 10px;
+    border-radius: 12px;
+    background: #FFFFFF;
+    border: 2px solid var(--success-light-color);
+    color: var(--success-light-color)
+}
+
+.downloadBtn{
+    padding: 10px;
+    font-size: 1.3em;
+    border-radius: 12px;
+    background: var(--success-light-color);
+    border: 2px solid var(--white-color);
+    color: var(--white-color)
+}
