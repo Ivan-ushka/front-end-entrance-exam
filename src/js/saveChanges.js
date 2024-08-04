@@ -25,3 +25,4 @@ const editableElements = document.querySelectorAll('[contenteditable="true"]');
 editableElements.forEach(element => {
     element.addEventListener('input', saveData);
 });
+
