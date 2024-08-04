@@ -80,11 +80,20 @@ select {
     align-items: center;
 }
 
-.profile-img-wrap img {
-    width: 12.4em;
-    height: 100%;
+.profile-image{
+    object-fit: cover;
     border-radius: 12px;
 }
+
+@media (min-width: 600px) {
+    .profile-image{
+        width: 186px;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+}
+
 
 .introduction-info {
     display: flex;
@@ -126,7 +135,7 @@ select {
 
 .languages-wrap {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
@@ -201,6 +210,10 @@ select {
     font-weight: 500;
 }
 
+.experience-profession-header, .experience-data {
+    font-weight: 500;
+}
+
 .experience-profession {
     color: var(--secondary-color);
     font-weight: 400;
@@ -221,6 +234,7 @@ select {
     margin-bottom: 16px;
     padding: 12px;
     background: var(--success-light-color);
+    color: var(--white-color)
 }
 
 .experience-item {
@@ -232,7 +246,6 @@ select {
     padding: 12px;
     background: var(--white-color);
 }
-
 
 .experience-main {
     display: grid;
@@ -256,9 +269,23 @@ select {
 .experience-most-resent {
     text-align: center;
     border-radius: 59px;
+    font-size: 0.8em;
     padding: 3px 10px;
     background: var(--brown-light-color);
     color: var(--yellow-color);
+    font-weight: 500;
+}
+
+.experience li{
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+@media (min-width: 700px) {
+    .experience li{
+        font-weight: 400;
+        font-size: 1em;
+    }
 }
 
 
@@ -283,7 +310,6 @@ select {
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: 12px;
     padding: 10px;
 }
 
@@ -295,17 +321,19 @@ select {
     align-items: center;
     justify-items: center;
     padding: 20px 12px;
-    margin-bottom: 12px;
     border-radius: 6px;
-    background: var(--light-color);
+    background: var(--white-color);
 }
 
 .tools-item-name {
+    display: flex;
     position: absolute;
     text-align: center;
-    margin-top: -9px;
-    padding: 1px 10px;
-    border-radius: 59px;
+    margin-bottom: -1.2em;
+    padding: 0.3em 1em;
+    border-radius: 5.9em;
+    font-weight: 500;
+    font-size: 0.6em;
     background: var(--black-color);
     color: var(--white-color);
 }
@@ -438,9 +466,8 @@ select {
 
 .interests-tag {
     display: inline-block;
-    margin: 6px;
     padding: 4px 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: var(--white-color);
 }
 
@@ -457,6 +484,10 @@ select {
     color: var(--white-color);
 }
 
+.email-introduction{
+   font-weight: 500;
+}
+
 .email-text {
     margin-top: 10px;
 }
@@ -465,6 +496,7 @@ select {
 
 .downloadBtn-wrap {
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     font-weight: 600;
