@@ -1,4 +1,3 @@
-
 document.getElementById('downloadBtn').addEventListener('click', () => {
     const firstSection = document.querySelector(".first-section");
     const secondSection = document.querySelector(".second-section");
@@ -7,9 +6,9 @@ document.getElementById('downloadBtn').addEventListener('click', () => {
     const opt = {
         margin: 0.001,
         filename: 'resume.pdf',
-        image: { type: 'jpeg', quality: 1.5 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        image: {type: 'jpeg', quality: 1.5},
+        html2canvas: {scale: 2},
+        jsPDF: {unit: 'in', format: 'letter', orientation: 'portrait'}
     };
 
     const pdfContent = document.createElement('div');
